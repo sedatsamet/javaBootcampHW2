@@ -7,20 +7,20 @@ public class Main {
         addStudentsToList(studentList);
 
         //MARK: Question-A
-        /*groupByClassName(studentList).values().stream().forEach(studentLists -> {
+        groupByClassName(studentList).values().stream().forEach(studentLists -> {
             System.out.println("Class: " + studentLists.get(0).getClassName());
             System.out.println(studentLists);
-        });*/
+        });
 
         // MARK : Question-B
-        //highestGradeOfEachClass(studentList).forEach(student -> System.out.println(student));
+        highestGradeOfEachClass(studentList).forEach(student -> System.out.println(student));
 
         // MARK : Question-C
-        //Student highestGradeStudent = highestGradeStudent(studentList);
-        //System.out.println("Highest Grade Student : " + highestGradeStudent.getName() + " - Grade : " + highestGradeStudent.getGrade());
+        Student highestGradeStudent = highestGradeStudent(studentList);
+        System.out.println("Highest Grade Student : " + highestGradeStudent.getName() + " - Grade : " + highestGradeStudent.getGrade());
 
         // MARK : Question-D
-        //higherThanSeventyGrades(studentList).forEach(student -> System.out.println(student));
+        higherThanSeventyGrades(studentList).forEach(student -> System.out.println(student));
 
         // MARK : Question-E
         sortedByGrades(studentList).forEach(student -> System.out.println(student));
